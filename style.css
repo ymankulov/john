@@ -1,0 +1,295 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+body {
+  font-family: "Heebo", sans-serif;
+}
+button {
+  cursor: pointer;
+  border: none;
+}
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* HEADER */
+#header {
+  padding: 30px 0;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.header a {
+  color: #000;
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0 0 0 30px;
+}
+/* HEADER */
+
+/* HERO */
+#hero {
+  margin: 140px 0 50px 0;
+}
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 85%;
+}
+.hero-text h1 {
+  color: var(--Dark-Color, #21243d);
+  font-size: 44px;
+  font-weight: 700;
+  line-height: 60px; /* 136.364% */
+}
+.hero-text p {
+  color: var(--Dark-Color, #21243d);
+  font-size: 16px;
+  font-weight: 400;
+  margin: 40px 0;
+}
+.hero-text button {
+  width: 208px;
+  height: 47px;
+  border-radius: 2px;
+  background: var(--Primary, #ff6464);
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+}
+/* HERO */
+
+/* POST */
+#post {
+  padding: 50px 0;
+  background: #d9f2f8;
+}
+.post-text {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+}
+.post-text h1 {
+  color: var(--Dark-Color, #21243d);
+  font-size: 22px;
+  font-weight: 400;
+}
+.post-text h5 {
+  color: var(--Secondry, #00a8cc);
+  font-size: 16px;
+  font-weight: 400;
+}
+.post-block {
+  margin-top: 40px;
+  width: 418px;
+  height: 255px;
+  border-radius: 4px;
+  background: #fff;
+  padding: 24px;
+  box-shadow: 0px 4px 10px 0px rgba(187, 225, 250, 0.25);
+}
+.post-block h2 {
+  color: var(--Dark-Color, #21243d);
+  font-size: 26px;
+  font-weight: 700;
+}
+.post-block h4 {
+  color: var(--Dark-Color, #21243d);
+  font-size: 18px;
+  font-weight: 400;
+  margin: 18px 0;
+}
+.post-block h4 span {
+  margin: 0 10px;
+}
+.post-block p {
+  color: var(--Dark-Color, #21243d);
+  font-size: 16px;
+  font-weight: 400;
+}
+.post {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+}
+/* POST */
+
+#works {
+  padding: 30px 0;
+}
+.works {
+  gap: 46px;
+  display: flex;
+  flex-direction: column;
+}
+
+.works-card1 {
+  gap: 28px;
+  display: flex;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.works-title {
+  color: var(--Dark-Color, #21243d);
+  font-size: 22px;
+  font-weight: 400;
+  padding-bottom: 35px;
+}
+
+.works-text h1 {
+  color: var(--Dark-Color, #21243d);
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.text-w {
+  gap: 26px;
+  margin: 16px 0px 17px 0px;
+  display: flex;
+}
+
+.text-w h4 {
+  width: 62px;
+  height: 25px;
+  border-radius: 16px;
+  background: #142850;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 900;
+  text-align: center;
+}
+
+.text-w p {
+  color: #8695a47a;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.works-text p {
+  color: var(--Dark-Color, #21243d);
+  font-size: 16px;
+  font-weight: 400;
+}
+
+#adress {
+  padding: 89px 0px 57px 0px;
+}
+
+.adress {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 26px;
+}
+
+.adress p {
+  color: var(--Dark, #21243d);
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.adress-play {
+  display: flex;
+  gap: 35px;
+}
+
+@media (max-width: 1400px) {
+  .container {
+    width: 90%;
+  }
+}
+@media (max-width: 992px) {
+  .post-block h2 {
+    font-size: 19px;
+  }
+  .post-block p {
+    font-size: 13px;
+  }
+  .post-block {
+    width: 296px;
+  }
+}
+@media (max-width: 568px) {
+    .hero {
+        flex-direction: column-reverse;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+    .hero-text p {
+        font-size: 14px;
+    }
+    .post {
+        flex-direction: column;
+    }
+    .works-card1 {
+        flex-direction: column;
+    }
+    .works-text p {
+        width: 70%;
+    }
+    .works-card1 img {
+        width: 60%;
+    }
+}
+@media (max-width: 320px) {
+    .hero {
+        width: 100%;
+    }
+    .hero img {
+        width: 70%;
+    }
+    #hero {
+        margin: 8px 0 50px 0;
+    }
+    .hero-text h1 {
+        font-size: 32px;
+        line-height: 40px;
+    }
+    .post {
+        width: 100%;
+    }
+    .post-block {
+        width: 80%;
+    }
+    .post-block h2 {
+        font-size: 16px;
+    }
+    .post-block h4 {
+        font-size: 16px;
+    }
+    .post-block p {
+        font-size: 10px;
+        line-height: 20px;
+    }
+    .works-card1 img {
+        width: 80%;
+    }
+    .works-text p {
+        width: 80%;
+    }
+}
+@media (max-width:400px) {
+    .post {
+        width: 100%;
+    }
+}
+@media (max-width:440px) {
+    .hero {
+        width: 100%;
+    }
+    .post {
+        width: 100%;
+    }
+}
